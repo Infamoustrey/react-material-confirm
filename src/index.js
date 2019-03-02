@@ -30,20 +30,36 @@ class ReactMaterialConfirm extends Component {
   }
 
   render() {
-    let { title, cancelText, confirmText, activator } = this.props;
+    let {
+      title,
+      cancelText,
+      confirmText,
+      activator,
+      activatorText
+    } = this.props;
     return (
       <React.Fragment>
-        <React.Fragment onClick={this.open}>{activator}</React.Fragment>
+        {activator ? (
+          <React.Fragment onClick={this.open}>{activator}</React.Fragment>
+        ) : (
+          <Button variant="contained" color="primary">
+            {activatorText ? activatorText : "Confirm"}
+          </Button>
+        )}
         <Dialog>
           <DialogTitle>{title}</DialogTitle>
           <DialogContent>
             <DialogContentText>{message}</DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button color="secondary" onClick={this.cancel}>
+            <Button color="secondary" variant="text" onClick={this.cancel}>
               {cancelText ? cancelText : "Cancel"}
             </Button>
-            <Button color="secondary" onClick={this.confirm}>
+            <Button
+              color="secondary"
+              variant="contained"
+              onClick={this.confirm}
+            >
               {confirmText ? confirmText : "Confirm"}
             </Button>
           </DialogActions>
