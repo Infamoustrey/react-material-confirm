@@ -1,6 +1,6 @@
 {
   "name": "react-material-confirm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A confirmation modal component built with react-material",
   "main": "dist/index.js",
   "scripts": {
