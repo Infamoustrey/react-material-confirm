@@ -1,6 +1,6 @@
 {
   "name": "react-material-confirm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A confirmation modal component built with react-material",
   "main": "dist/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/Infamoustrey/react-material-confirm/issues"
   },
-  "homepage": "https://github.com/Infamoustrey/react-material-confirm#readme", 
+  "homepage": "https://github.com/Infamoustrey/react-material-confirm#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
