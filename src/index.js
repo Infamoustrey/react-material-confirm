@@ -15,10 +15,18 @@ class ReactMaterialConfirm extends Component {
     this.state = {
       open: false
     };
+
+    this.open = this.open.bind(this);
+    this.cancel = this.cancel.bind(this);
+    this.confirm = this.confirm.bind(this);
   }
 
   open() {
     this.setState({ open: true });
+  }
+
+  close() {
+    this.setState({ open: false });
   }
 
   cancel() {
@@ -32,21 +40,23 @@ class ReactMaterialConfirm extends Component {
   render() {
     let {
       title,
+      message,
       cancelText,
       confirmText,
       activator,
       activatorText
     } = this.props;
+    let { open } = this.state;
     return (
       <React.Fragment>
         {activator ? (
-          <React.Fragment onClick={this.open}>{activator}</React.Fragment>
+          <span onClick={this.open}>{activator}</span>
         ) : (
           <Button variant="contained" color="primary">
             {activatorText ? activatorText : "Confirm"}
           </Button>
         )}
-        <Dialog>
+        <Dialog open={open} onClose={this.close}>
           <DialogTitle>{title}</DialogTitle>
           <DialogContent>
             <DialogContentText>{message}</DialogContentText>

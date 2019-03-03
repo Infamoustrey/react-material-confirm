@@ -21,15 +21,19 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "laravel-mix": "^4.0.14",
+    "np": "^4.0.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.2",
-    "global": "^4.3.2",
-    "np": "^4.0.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   }

@@ -15,9 +15,12 @@ module.exports = {
   output: {
     path: __dirname + "/dist",
     publicPath: "/",
-    filename: "index.js"
+    filename: "index.js",
+    libraryTarget: "commonjs2"
   },
-  devServer: {
-    contentBase: "./dist"
+  externals: {
+    react: "commonjs react",
+    react_dom: "commonjs react-dom",
+    material_ui_core: "commonjs @material-ui/core"
   }
 };
