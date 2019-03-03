@@ -2,10 +2,9 @@
   "name": "react-material-confirm",
   "version": "1.0.0",
   "description": "A confirmation modal component built with react-material",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,6 +22,8 @@
   },
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "global": "^4.3.2",
+    "np": "^4.0.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   }
