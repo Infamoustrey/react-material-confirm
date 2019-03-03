@@ -2,9 +2,10 @@
   "name": "react-material-confirm",
   "version": "1.0.1",
   "description": "A confirmation modal component built with react-material",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,10 +16,15 @@
   "bugs": {
     "url": "https://github.com/Infamoustrey/react-material-confirm/issues"
   },
-  "homepage": "https://github.com/Infamoustrey/react-material-confirm#readme",
+  "homepage": "https://github.com/Infamoustrey/react-material-confirm#readme", 
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "laravel-mix": "^4.0.14"
+    "babel-loader": "^8.0.5",
+    "laravel-mix": "^4.0.14",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.2",
